@@ -5,6 +5,7 @@
 
 # **Introduction**
 
+
 In order to test the communication through Profinet we used a sample application created by rt-labs to send logic signals of 1 or 0 to a PLC (IO controller) from a raspberry pi model B+ (IO device).
 
 ### Topics
@@ -28,13 +29,13 @@ Further on in this repository the existing files in the rt-labs repository will 
 
 Click on the button “Code”.
 
-![Figure 1 - rtlabs-com GitHub repository.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Captura_de_ecr_2022-05-09_163924.png)
+![Figure 1 - rtlabs-com GitHub repository.](iProfiApp/Captura_de_ecr_2022-05-09_163924.png)
 
 Figure 1 - rtlabs-com GitHub repository.
 
 Click on the button “Download ZIP”.
 
-![Figure 2 - Repository download.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Captura_de_ecr_2022-05-09_163924%201.png)
+![Figure 2 - Repository download.](iProfiApp/Captura_de_ecr_2022-05-09_163924%201.png)
 
 Figure 2 - Repository download.
 
@@ -54,19 +55,19 @@ You can install it with the link below:
 
 Click on the Download for Windows button.
 
-![Figure 3 - Installing Raspberry Pi OS using Raspberry Pi Imager. ](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Sem_ttulo.png)
+![Figure 3 - Installing Raspberry Pi OS using Raspberry Pi Imager. ](iProfiApp/Sem_ttulo.png)
 
 Figure 3 - Installing Raspberry Pi OS using Raspberry Pi Imager. 
 
 Open the downloaded file.
 
-![Figure 4 - Choose OS.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Sem_ttulo%201.png)
+![Figure 4 - Choose OS.](iProfiApp/Sem_ttulo%201.png)
 
 Figure 4 - Choose OS.
 
 Click on the CHOOSE OS option then choose the recommended option which is the full version.
 
-![Figure 5 - Choose Storage.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Sem_ttulo%202.png)
+![Figure 5 - Choose Storage.](iProfiApp/Sem_ttulo%202.png)
 
 Figure 5 - Choose Storage.
 
@@ -165,137 +166,137 @@ For this tutorial was used a S71500(CPU 1516-3 PN/DP) PLC connected to a switch 
 
 The next step will be using TIA Portal v16 to configure everything that is needed. To start click on the “Create new project” button, choose a name and select version v16.
 
-![Figure 6 - Create new project](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Captura_de_ecr_2022-05-09_163924%202.png)
+![Figure 6 - Create new project](iProfiApp/Captura_de_ecr_2022-05-09_163924%202.png)
 
 Figure 6 - Create new project
 
 Then click on “Configure a device”.
 
-![Figure 7 - Configure a device.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Captura_de_ecr_2022-05-09_163924%203.png)
+![Figure 7 - Configure a device.](iProfiApp/Captura_de_ecr_2022-05-09_163924%203.png)
 
 Figure 7 - Configure a device.
 
 In the “Configure a device” menu choose the PLC that you will use. For the sake of this tutorial we used a S71500(CPU 1516-3 PN/DP) 6ES7 516-3AN02-0AB0.
 
-![Figure 8 - CPU 1516-3 PN/DP 6ES7 516-3AN02-0AB0.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Sem_ttulo%203.png)
+![Figure 8 - CPU 1516-3 PN/DP 6ES7 516-3AN02-0AB0.](iProfiApp/Sem_ttulo%203.png)
 
 Figure 8 - CPU 1516-3 PN/DP 6ES7 516-3AN02-0AB0.
 
 Now head to “Network view”.
 
-![Figure 9 - Network view.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Captura_de_ecr_2022-05-09_163924%204.png)
+![Figure 9 - Network view.](iProfiApp/Captura_de_ecr_2022-05-09_163924%204.png)
 
 Figure 9 - Network view.
 
 In order to choose the GSDML file, you must go to: Options > Manage general station description files (GSD).
 
-![Figure 10 - Choosing the GSDML file.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Captura_de_ecr_2022-05-09_163924%205.png)
+![Figure 10 - Choosing the GSDML file.](iProfiApp/Captura_de_ecr_2022-05-09_163924%205.png)
 
 Figure 10 - Choosing the GSDML file.
 
 Now select the place where you extracted the repository and choose the sample app folder. After selecting, the GSDML files will be displayed in this menu. Select the necessary file and press install.
 
-![Figure 11 - GSDML file selection.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Captura_de_ecr_2022-05-09_163924%206.png)
+![Figure 11 - GSDML file selection.](iProfiApp/Captura_de_ecr_2022-05-09_163924%206.png)
 
 Figure 11 - GSDML file selection.
 
 Now on the right side of the screen under “Hardware catalog”, in the search bar search for rt-labs and then choose “P-Net multi-module sample app”.
 
-![Figure 12 - Device catalog.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Captura_de_ecr_2022-05-09_163924%207.png)
+![Figure 12 - Device catalog.](iProfiApp/Captura_de_ecr_2022-05-09_163924%207.png)
 
 Figure 12 - Device catalog.
 
 Now in the centre of the screen should appear the device as demonstrated in the image below.
 
-![Figure 13 - IO device.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Captura_de_ecr_2022-05-09_163924%208.png)
+![Figure 13 - IO device.](iProfiApp/Captura_de_ecr_2022-05-09_163924%208.png)
 
 Figure 13 - IO device.
 
 The next step will be to connect the two devices as shown in the picture. To do that, just click and drag over the green square in the middle of the IO controller and the green square of the IO device.
 
-![Figure 14 - TIA portal connection between IO controller and IO device.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Captura_de_ecr_2022-05-09_163924%209.png)
+![Figure 14 - TIA portal connection between IO controller and IO device.](iProfiApp/Captura_de_ecr_2022-05-09_163924%209.png)
 
 Figure 14 - TIA portal connection between IO controller and IO device.
 
 To set up both devices IP addresses, start with the PLC and then the IO device.  
 
-![Figure 15 - IO controller adress.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Captura_de_ecr_2022-05-09_163924%2010.png)
+![Figure 15 - IO controller adress.](iProfiApp/Captura_de_ecr_2022-05-09_163924%2010.png)
 
 Figure 15 - IO controller adress.
 
-![Figure 16 - IO device adress.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Captura_de_ecr_2022-05-09_163924%2011.png)
+![Figure 16 - IO device adress.](iProfiApp/Captura_de_ecr_2022-05-09_163924%2011.png)
 
 Figure 16 - IO device adress.
 
 Double click on rt-labs-dev and the following window should appear. Inside that window, on the right hand side where it says “Hardware catalog”, you must drag the DIO 8xLogiclevel to the first slot below the X1 P1.
 
-![Figure 17 - Insertion of the modules.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Captura_de_ecr_2022-05-09_163924%2012.png)
+![Figure 17 - Insertion of the modules.](iProfiApp/Captura_de_ecr_2022-05-09_163924%2012.png)
 
 Figure 17 - Insertion of the modules.
 
 Now by clicking on the IO device in IO cycle > update time, the option “calculate update time automatically” will be enabled by default, so you will need to change to “Set update time manually” and select the update time to 16 ms.
 
-![Figure 18 - Update time.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Captura_de_ecr_2022-05-09_163924%2013.png)
+![Figure 18 - Update time.](iProfiApp/Captura_de_ecr_2022-05-09_163924%2013.png)
 
 Figure 18 - Update time.
 
 To know what values are being received in the PLC we must first see which adresses are used for the inputs and outputs.
 
-![Figure 19 - Adresses of the DIO module.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Sem_ttulo%204.png)
+![Figure 19 - Adresses of the DIO module.](iProfiApp/Sem_ttulo%204.png)
 
 Figure 19 - Adresses of the DIO module.
 
 To know what values are being sent and received in the PLC we must identify the input and output tags as in the picture below, together with their data type and address:
 
-![Figure 20 - PLC tags.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Sem_ttulo%205.png)
+![Figure 20 - PLC tags.](iProfiApp/Sem_ttulo%205.png)
 
 Figure 20 - PLC tags.
 
 It will be necessary to create a block in order to be able to see the values obtained, so it will be necessary to follow these steps for it to work correctly:
 
-![Figure 21 - Add new block.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Sem_ttulo%206.png)
+![Figure 21 - Add new block.](iProfiApp/Sem_ttulo%206.png)
 
 Figure 21 - Add new block.
 
 You must use a Function Block with SCL as language.
 
-![Figure 22 - Function block.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Sem_ttulo%207.png)
+![Figure 22 - Function block.](iProfiApp/Sem_ttulo%207.png)
 
 Figure 22 - Function block.
 
 Within the block we will have to introduce the variables that will act as inputs, outputs and others that need to be configured.
 
-![Figure 23 - Program block data.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Untitled.png)
+![Figure 23 - Program block data.](iProfiApp/Untitled.png)
 
 Figure 23 - Program block data.
 
 With the block already created we will pull it into the main and then connect to the "in_pin_button" the "ButtonIn" and the "out_pin" the "DataOut".
 
-![Figure 24 - Pogram block in the main.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Untitled%201.png)
+![Figure 24 - Pogram block in the main.](iProfiApp/Untitled%201.png)
 
 Figure 24 - Pogram block in the main.
 
 You must configure the watch table exactly as described in the figure. To be able to view it, you must press the button highlighted in the figure below.
 
-![Figure 25 - Watch table configuration. ](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/92a2beb52847fab6374e035b709203ff.jpg)
+![Figure 25 - Watch table configuration. ](iProfiApp/92a2beb52847fab6374e035b709203ff.jpg)
 
 Figure 25 - Watch table configuration. 
 
 Before downloading the configuration to the PLC and pressing "Go online" you should compile the hardware by pressing the button "Hardware (rebuild all)" and also the software by pressing the button "Software (rebuild all)".
 
-![Figure 26 - Compile both hardware and software.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Sem_ttulo%208.png)
+![Figure 26 - Compile both hardware and software.](iProfiApp/Sem_ttulo%208.png)
 
 Figure 26 - Compile both hardware and software.
 
 Now you should download the configuration to the PLC on the following button.
 
-![Figure 27 - Download to the PLC step.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Captura_de_ecr_2022-05-09_163924%2014.png)
+![Figure 27 - Download to the PLC step.](iProfiApp/Captura_de_ecr_2022-05-09_163924%2014.png)
 
 Figure 27 - Download to the PLC step.
 
 Then press the “Go online” button and select your settings.
 
-![Figure 28 -  “Go Online” step.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Sem_ttulo%209.png)
+![Figure 28 -  “Go Online” step.](iProfiApp/Sem_ttulo%209.png)
 
 Figure 28 -  “Go Online” step.
 
@@ -349,19 +350,19 @@ values)
 
 This file must have a correct nomenclature describing several characteristics described in the image below:
 
-![Figure 29 - Example of the nomenclature for a GSDML file.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Untitled%202.png)
+![Figure 29 - Example of the nomenclature for a GSDML file.](iProfiApp/Untitled%202.png)
 
 Figure 29 - Example of the nomenclature for a GSDML file.
 
 To know which version of GSDML-Scheme you can consult the table below:
 
-![Figure 30 - Corresponding version of the TIA portal to the GSD file.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Untitled%203.png)
+![Figure 30 - Corresponding version of the TIA portal to the GSD file.](iProfiApp/Untitled%203.png)
 
 Figure 30 - Corresponding version of the TIA portal to the GSD file.
 
 In the file you will have to define the variable formats in the table below are the denominations that can be used.
 
-![Figure 31 - Data type names for GSDML file.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Untitled%204.png)
+![Figure 31 - Data type names for GSDML file.](iProfiApp/Untitled%204.png)
 
 Figure 31 - Data type names for GSDML file.
 
@@ -680,7 +681,7 @@ This module works with the PLC to send two messages a float and an int, which ar
 
 To know what values are being sent and received in the PLC we must identify the input and output tags as in the picture below, together with their data type and address:
 
-![Figure 34 - PLC tags.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Sem_ttulo%2010.png)
+![Figure 34 - PLC tags.](iProfiApp/Sem_ttulo%2010.png)
 
 Figure 34 - PLC tags.
 
@@ -688,13 +689,13 @@ As in the previous example, for the echo module you will also need to create a b
 
 You must use a Function Block with SCL as language.
 
-![Figure 32 - Function block.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Sem_ttulo%2011.png)
+![Figure 32 - Function block.](iProfiApp/Sem_ttulo%2011.png)
 
 Figure 32 - Function block.
 
 Within the block we will have to introduce the variables that will act as inputs, outputs and others that need to be configured.
 
-![Figure 33 - Program block data.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Untitled%205.png)
+![Figure 33 - Program block data.](iProfiApp/Untitled%205.png)
 
 Figure 33 - Program block data.
 
@@ -716,31 +717,31 @@ this can be changed depending on what is wanted
 
 With the block already created we will pull it into the main and then connect to the "in_float" the "EchoFloatin”, the "EchoInInt" to the "in_int", the "EchoFloatOut" to the "out_float" and the "EchoIntOut" to the "out_int".
 
-![Figure 35 - Pogram block in the main.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Untitled%206.png)
+![Figure 35 - Pogram block in the main.](iProfiApp/Untitled%206.png)
 
 Figure 35 - Pogram block in the main.
 
 You must configure the watch table exactly as described in the figure. To be able to view it, you must press the button highlighted in the figure below. In the force table you must put the "EchoFloatOut" and the "EchoIntOut".
 
-![Figure 36 - Watch table configuration. ](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Sem_ttulo%2012.png)
+![Figure 36 - Watch table configuration. ](iProfiApp/Sem_ttulo%2012.png)
 
 Figure 36 - Watch table configuration. 
 
 Before downloading the configuration to the PLC and pressing "Go online" you should compile the hardware by pressing the button "Hardware (rebuild all)" and also the software by pressing the button "Software (rebuild all)".
 
-![Figure 37 - Compile both hardware and software.](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Sem_ttulo%208.png)
+![Figure 37 - Compile both hardware and software.](iProfiApp/Sem_ttulo%208.png)
 
 Figure 37 - Compile both hardware and software.
 
 Now you should download the configuration to the PLC on the following button.
 
-![Figure 38 - Download to the PLC step](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Captura_de_ecr_2022-05-09_163924%2014.png)
+![Figure 38 - Download to the PLC step](iProfiApp/Captura_de_ecr_2022-05-09_163924%2014.png)
 
 Figure 38 - Download to the PLC step
 
 Then press the “Go online” button and select your settings.
 
-![Figure 39 - “Go online” step](iProfiApp%20faa3bb94c3c94994baf6e13e538b7f34/Sem_ttulo%209.png)
+![Figure 39 - “Go online” step](iProfiApp/Sem_ttulo%209.png)
 
 Figure 39 - “Go online” step
 
