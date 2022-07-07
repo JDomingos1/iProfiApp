@@ -50,7 +50,7 @@ First of all we will need to install Raspberry Pi OS image to SD card using Rasp
 You can install it with the link below:
 
 ```html
-[https://www.raspberrypi.com/software/](https://www.raspberrypi.com/software/) 
+https://www.raspberrypi.com/software/](https://www.raspberrypi.com/software/) 
 ```
 
 Click on the Download for Windows button.
