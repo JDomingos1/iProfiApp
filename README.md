@@ -683,7 +683,7 @@ To know what values are being sent and received in the PLC we must identify the 
 
 ![Figure 34 - PLC tags.](iProfiApp/Sem_ttulo%2010.png)
 
-Figure 34 - PLC tags.
+Figure 32 - PLC tags.
 
 As in the previous example, for the echo module you will also need to create a block.
 
@@ -691,13 +691,13 @@ You must use a Function Block with SCL as language.
 
 ![Figure 32 - Function block.](iProfiApp/Sem_ttulo%2011.png)
 
-Figure 32 - Function block.
+Figure 33 - Function block.
 
 Within the block we will have to introduce the variables that will act as inputs, outputs and others that need to be configured.
 
 ![Figure 33 - Program block data.](iProfiApp/Untitled%205.png)
 
-Figure 33 - Program block data.
+Figure 34 - Program block data.
 
 The code used in the block is below.
 
