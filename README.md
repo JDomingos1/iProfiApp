@@ -703,9 +703,9 @@ The code used in the block is below.
 
 ```csharp
 #out_float := 5.321; //Float value that will be sent by the plc to the raspberry pi,
-this can be changed depending on what is wanted
+//this can be changed depending on what is wanted
 #out_int := 50; //Int value that will be sent by the plc to the raspberry pi,
-this can be changed depending on what is wanted
+//this can be changed depending on what is wanted
 
 // Alternatively, we can increment a value each cycle, so here is an example:
 // #out_float += 0.01;
